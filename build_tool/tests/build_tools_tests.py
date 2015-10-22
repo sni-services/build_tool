@@ -11,3 +11,7 @@ def teardown():
 
 def test_basic():
 	print "I RAN!"
+
+
+def test_basic2():
+	print "I RAN!"
