@@ -7,6 +7,7 @@ from build_tool.Version import *
 class MyTestCase(unittest.TestCase):
 	def setUp(self):
 		self.version = Version(1, 2, 3)
+		self.config_version = Version.from_config_file("tests/test_version.conf", "CM_LATEST")
 
 	def test_version_constructor(self):
 		self.assertEqual(self.version.get_current_version_string(), "1.2.3")
@@ -21,8 +22,8 @@ class MyTestCase(unittest.TestCase):
 		self.assertEqual(self.version.next_major_version(), "2.2.3")
 
 	def test_config_init(self):
-		v = Version.from_config_file("tests/test_version.conf", "CM_LATEST")
-		self.assertEquals(v.get_current_version_string(), "5.4.5")
+		self.assertEquals(self.config_version.get_current_version_string(), "5.4.5")
+		self.assertEqual(self.config_version.isDownloaded(), False )
 
 	# lv.config.set(version_string, "downloaded", False)
 	# lv.config.set(version_string, "repackage", False)

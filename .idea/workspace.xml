@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="266f3947-0458-4957-ad58-6d8cb3b67326" name="Default" comment="migrate the config file to be composed in the version in the">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build_tool/tests/test_version.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build_tool/tests/version_tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build_tool/build_tool/__init__.py" afterPath="$PROJECT_DIR$/build_tool/build_tool/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build_tool/build_tool/Version/__init__.py" afterPath="$PROJECT_DIR$/build_tool/build_tool/Version/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build_tool/tests/build_tools_tests.py" afterPath="$PROJECT_DIR$/build_tool/tests/build_tools_tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/shainnif.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/shainnif.xml" />
+    <list default="true" id="266f3947-0458-4957-ad58-6d8cb3b67326" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build_tool/tests/version_tests.py" afterPath="$PROJECT_DIR$/build_tool/tests/version_tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RBS Engineering.iws" />
@@ -38,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build_tool/build_tool/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91628957">
-              <caret line="31" column="50" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="80" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -50,11 +45,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version_tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build_tool/tests/version_tests.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build_tool/build_tool/Version/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build_tool/resources/version.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="version_tests.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build_tool/tests/version_tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38914028">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="e#30#45#0" expanded="true" />
               </folding>
@@ -796,7 +811,7 @@
       <created>1445503817366</created>
       <option name="number" value="Default" />
       <updated>1445503817366</updated>
-      <workItem from="1445503820821" duration="13827000" />
+      <workItem from="1445503820821" duration="14693000" />
     </task>
     <task id="LOCAL-00001" summary="Initial version of the build script.">
       <created>1445510835974</created>
@@ -810,11 +825,17 @@
       <option name="project" value="LOCAL" />
       <updated>1445510895116</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed a bunch of problems with my low understanding of OO programing in python.">
+      <created>1445529043980</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1445529043980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13827000" />
+    <option name="totallyTimeSpent" value="14693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -867,7 +888,8 @@
     <MESSAGE value="removed duplicate method" />
     <MESSAGE value="the basic tests around the Version are now working and have found a few bugs" />
     <MESSAGE value="migrate the config file to be composed in the version in the" />
-    <option name="LAST_COMMIT_MESSAGE" value="migrate the config file to be composed in the version in the" />
+    <MESSAGE value="fixed a bunch of problems with my low understanding of OO programing in python." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a bunch of problems with my low understanding of OO programing in python." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -910,14 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build_tool/resources/version.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build_tool/tests/build_tools_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -936,28 +950,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build_tool/build_tool/Version/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22198732">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build_tool/tests/version_tests.py">
+    <entry file="file://$PROJECT_DIR$/build_tool/resources/version.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-          <folding>
-            <element signature="e#30#45#0" expanded="true" />
-          </folding>
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build_tool/build_tool/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91628957">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="80" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build_tool/tests/version_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38914028">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="e#30#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
