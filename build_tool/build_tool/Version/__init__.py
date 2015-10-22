@@ -5,10 +5,6 @@ MAJOR = "major"
 MINOR = "minor"
 
 
-def get_version_string(major, minor, bugfix):
-	return "{}.{}.{}".format(major, minor, bugfix)
-
-
 def get_software_version_string(major, minor, bugfix):
 	return "{}.{}.{}".format(major, minor, bugfix)
 
