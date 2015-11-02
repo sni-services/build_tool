@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -8,7 +7,6 @@ __pycache__/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
->>>>>>> 81a981d3e8b32e7b370c83621a23cf4d17a9ed9c
 
 # C extensions
 *.so
@@ -64,5 +62,5 @@ docs/_build/
 # PyBuilder
 target/
 out/
-.idea
+.idea/
 
