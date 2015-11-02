@@ -1,17 +1,10 @@
 __author__ = 'shainnif'
 
-
-def setup():
-	print "SETUP!"
-
-
-def teardown():
-	print "TEAR DOWN!"
+import unittest
+import buildtools
 
 
-def test_basic():
-	print "I RAN!"
+class MyTestCase(unittest.TestCase):
+	def setUp(self):
+		bt = Buid
 
-
-def test_basic2():
-	print "I RAN!"
