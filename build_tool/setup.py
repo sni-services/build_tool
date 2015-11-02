@@ -12,7 +12,7 @@ config = {
 	'download_url': 'Where to download it.',
 	'author_email': 'shaine.ismail@rbs.com',
 	'version': '0.1',
-	'install_requires': ['nose'],
+	'install_requires': ['nose', 'wget'],
 	'packages': ['build_tool'],
 	'scripts': [],
 	'name': 'rbs Build Tools'
