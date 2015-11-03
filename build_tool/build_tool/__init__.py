@@ -1,8 +1,17 @@
 import urllib
 import logging
+import os
 from Version import *
 
-lv = Version.from_config_file('resources/version.conf', "CM_LATEST")
+print 'Current Working Directory: ' + os.getcwd()
+
+config_file = os.getcwd() + '/build_tool/resources/version.conf'
+
+if os.path.isfile(config_file):
+    lv = Version.from_config_file(config_file, "CM_LATEST")
+else:
+    print "can't find file " + config_file + ' exiting'
+    exit(1)
 
 # check the config
 print "starting"
