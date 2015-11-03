@@ -18,6 +18,8 @@ print "starting"
 
 
 def main():
+
+
     if check_next_bugfix_version():
         # does the version have an entry in the config?
         version_string = "cm-" + lv.next_bug_fix_version
