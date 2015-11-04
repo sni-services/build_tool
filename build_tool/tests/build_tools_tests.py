@@ -6,5 +6,4 @@ import buildtools
 
 class MyTestCase(unittest.TestCase):
 	def setUp(self):
-		bt = Buid
-
+		print "do some stuff here"

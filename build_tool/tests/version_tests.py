@@ -1,7 +1,7 @@
-__author__ = 'Shaine Ismail'
-
 import unittest
-from build_tool.Version import *
+from Version import *
+
+__author__ = 'Shaine Ismail'
 
 
 class MyTestCase(unittest.TestCase):
@@ -23,7 +23,7 @@ class MyTestCase(unittest.TestCase):
 
 	def test_config_init(self):
 		self.assertEquals(self.config_version.get_current_version_string(), "5.4.5")
-		self.assertEqual(self.config_version.isDownloaded(), False )
+		self.assertEqual(self.config_version.is_downloaded(), False)
 
 	# lv.config.set(version_string, "downloaded", False)
 	# lv.config.set(version_string, "repackage", False)
