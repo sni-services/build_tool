@@ -5,7 +5,7 @@ from Version import *
 
 print 'Current Working Directory: ' + os.getcwd()
 
-config_file = os.getcwd() + '/build_tool/resources/version.conf'
+config_file = os.getcwd() + '/resources/version.conf'
 
 if os.path.isfile(config_file):
     lv = Version.from_config_file(config_file, "CM_LATEST")
