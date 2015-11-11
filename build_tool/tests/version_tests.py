@@ -1,11 +1,8 @@
 from build_tool.Version import *
 from nose.tools import assert_equals
+import os
 
 __author__ = 'Shaine Ismail'
-
-
-def setup():
-	version = Version(1, 2, 3)
 
 
 def test_version_constructor():
@@ -25,7 +22,7 @@ def test_next_major_version():
 
 
 def test_config_init():
-	v = Version.from_config_file("tests/test_version.conf", "CM_LATEST")
+	v = Version.from_config_file(os.getcwd() + "/tests/test_version.json", "CM_LATEST")
 	assert_equals(v.get_current_version_string(), "5.4.5")
 
 # lv.config.set(version_string, "downloaded", False)
