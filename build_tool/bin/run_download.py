@@ -26,7 +26,7 @@ url = 'http://www.futurecrew.com/skaven/song_files/mp3/razorback.mp3'
 #             f.flush()
 
 
-with open(os.getcwd() + '/resources/version.json') as json_data_file:
+with open(os.getcwd() + '/../resources/version.json') as json_data_file:
     data = json.load(json_data_file)
 print(data)
 
