@@ -1,5 +1,6 @@
 {
   "cloudera_manager": {
+    "url": "http://goes.no.where.com",
     "LATEST": {
       "major": "5",
       "minor": "4",
@@ -7,24 +8,50 @@
     },
     "VERSIONS": {
       "5.4.5": {
-        "downloaded": false,
-        "install_test": false,
-        "repackage": false
+        "downloaded": {
+          "status": false,
+          "comments": "went arse of tit"
+        },
+        "install_test": {
+          "status": false,
+          "comments": "went arse of tit"
+        },
+        "repackaged": {
+          "status": false,
+          "comments": "went arse of tit"
+        },
+        "deployed": {
+          "tech/dev":false,
+          "development" : false
+        }
       }
     }
   },
   "cdh": {
-    "LATEST": {
-      "major": "5",
-      "minor": "4",
-      "bugfix": "5"
-    },
-    "VERSIONS": {
-      "5.4.5": {
-        "downloaded": false,
-        "install_test": false,
-        "repackage": false
+      "LATEST": {
+        "major": "5",
+        "minor": "4",
+        "bugfix": "5"
+      },
+      "VERSIONS": {
+        "5.4.5": {
+          "downloaded": {
+            "status": false,
+            "comments": "went arse of tit"
+          },
+          "install_test": {
+            "status": false,
+            "comments": "went arse of tit"
+          },
+          "repackaged": {
+            "status": false,
+            "comments": "went arse of tit"
+          },
+          "deployed": {
+            "tech/dev":false,
+            "development" : false
+          }
+        }
       }
     }
   }
-}

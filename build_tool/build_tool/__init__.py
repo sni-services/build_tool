@@ -44,7 +44,7 @@ def check_next_bugfix_version():
 
 def get_cloudera_manager_url():
 	# TODO move this to config json file
-	cm_url = "http://archive.cloudera.com/cm5/redhat/6/x86_64/cm"
+	cm_url = lv.config['cloudera_manager']['url']
 	latest_url = "{}/{}".format(cm_url, lv.next_bug_fix_version)
 	print latest_url
 	return latest_url

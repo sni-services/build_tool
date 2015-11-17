@@ -25,7 +25,27 @@ def test_config_init():
 	v = Version.from_config_file(os.getcwd() + "/tests/test_version.json", "CM_LATEST")
 	assert_equals(v.get_current_version_string(), "5.4.5")
 
-# lv.config.set(version_string, "downloaded", False)
-# lv.config.set(version_string, "repackage", False)
-# lv.config.set(version_string, "install_test", False)
-# lv.config.set(version_string, "deployment", False)
+
+def test_config_cm_url():
+	v = Version.from_config_file(os.getcwd() + "/tests/test_version.json", "CM_LATEST")
+	assert_equals(v.get_cm_url(), "http://goes.no.where.com")
+
+
+def test_config_latest_cm_downloaded():
+	v = Version.from_config_file(os.getcwd() + "/tests/test_version.json", "CM_LATEST")
+	assert_equals(v.is_cm_version_downloaded(), False)
+
+
+def test_config_latest_cm_repackage_successful():
+	v = Version.from_config_file(os.getcwd() + "/tests/test_version.json", "CM_LATEST")
+	assert_equals(v.is_cm_version_repackaged(), False)
+
+
+def test_config_latest_cm_install_test_passed():
+	v = Version.from_config_file(os.getcwd() + "/tests/test_version.json", "CM_LATEST")
+	assert_equals(v.is_cm_version_install_test_passed(), False)
+
+
+def test_config_latest_cm_deployed_to_tec_dev():
+	v = Version.from_config_file(os.getcwd() + "/tests/test_version.json", "CM_LATEST")
+	assert_equals(v.is_cm_version_deployed_to_tec_dev(), False)
