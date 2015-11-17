@@ -1,20 +1,32 @@
-import urllib
 import logging
 import os
+<<<<<<< HEAD
 import Version
 import os
+=======
+import urllib
+
+from Version import *
+>>>>>>> feature/download_latest_version
 
 print 'Current Working Directory: ' + os.getcwd()
 
-config_file = os.getcwd() + '/build_tool/resources/version.conf'
+config_file = os.getcwd() + '/resources/version.json'
 
 if os.path.isfile(config_file):
+<<<<<<< HEAD
+=======
+	print "loading config file {0}".format(config_file)
+>>>>>>> feature/download_latest_version
 	lv = Version.from_config_file(config_file, "CM_LATEST")
 else:
 	print "can't find file " + config_file + ' exiting'
 	exit(1)
+<<<<<<< HEAD
 
 download_root_directory = "/tmp/"
+=======
+>>>>>>> feature/download_latest_version
 
 
 def main(self):
@@ -24,6 +36,7 @@ def main(self):
 		print "got here shaine"
 	version_string = "cm-" + lv.next_bug_fix_version
 
+<<<<<<< HEAD
 	if lv.config.has_section(version_string):
 		pass
 	else:
@@ -35,6 +48,19 @@ def main(self):
 def set_config(self, config_file):
 	self.config_file = config_file
 	self.version_config = Version.from_config_file(config_file, "CM_LATEST")
+=======
+def main():
+	if check_next_bugfix_version():
+		# does the version have an entry in the config?
+		version_string = "cm-" + lv.next_bug_fix_version
+
+		if lv.config.has_section(version_string):
+			pass
+		else:
+			print "adding new version " + version_string
+			# download the files
+			download(get_cloudera_manager_url())
+>>>>>>> feature/download_latest_version
 
 
 def check_next_bugfix_version():
@@ -48,6 +74,7 @@ def check_next_bugfix_version():
 
 
 def get_cloudera_manager_url():
+<<<<<<< HEAD
 	# create the directory
 	if not os.path.exists(download_root_directory):
 		os.makedirs(download_root_directory)
@@ -55,6 +82,10 @@ def get_cloudera_manager_url():
 		os.makedirs(download_root_directory + "/" + lv.next_bug_fix_version)
 
 	cm_url = "http://archive.cloudera.com/cm5/redhat/6/x86_64/cm"
+=======
+	# TODO move this to config json file
+	cm_url = lv.config['cloudera_manager']['url']
+>>>>>>> feature/download_latest_version
 	latest_url = "{}/{}".format(cm_url, lv.next_bug_fix_version)
 	print latest_url
 	return latest_url

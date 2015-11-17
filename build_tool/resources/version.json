@@ -1,0 +1,57 @@
+{
+  "cloudera_manager": {
+    "url" : "http://archive.cloudera.com/cm5/redhat/6/x86_64/cm",
+    "LATEST": {
+      "major": "5",
+      "minor": "4",
+      "bugfix": "5"
+    },
+    "VERSIONS": {
+      "5.4.5": {
+        "downloaded": {
+          "status" : false,
+          "comments" : "went arse over tit"
+        },
+        "install_test": {
+          "status" : false,
+          "comments" : "went arse over tit"
+        },
+        "repackaged": {
+          "status" : false,
+          "comments" : "went arse over tit"
+        },
+        "deployed": {
+          "tech/dev":false,
+          "development" : false
+        }
+      }
+    }
+  },
+  "cdh": {
+    "LATEST": {
+      "major": "5",
+      "minor": "4",
+      "bugfix": "5"
+    },
+    "VERSIONS": {
+      "5.4.5": {
+        "downloaded": {
+          "status" : false,
+          "comments" : "went arse of tit"
+        },
+        "install_test": {
+          "status" : false,
+          "comments" : "went arse of tit"
+        },
+        "repackaged": {
+          "status": false,
+          "comments": "went arse of tit"
+        },
+        "deployed": {
+          "tech/dev":false,
+          "development" : false
+        }
+      }
+    }
+  }
+}
