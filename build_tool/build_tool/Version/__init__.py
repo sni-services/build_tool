@@ -10,21 +10,13 @@ def get_software_version_string(major, minor, bugfix):
 	return "{}.{}.{}".format(major, minor, bugfix)
 
 
+def is_downloaded():
+	return False
+
+
 class Version(object):
 	"""docstring for Version"""
 
-	def __init__(self, major, minor, bugfix, config_path=None, section=None, ):
-		self.major = major
-		self.minor = minor
-		self.bugfix = bugfix
-		self.section = section
-
-	@classmethod
-	def from_config_file(cls, config_path, section):
-		cls.config = ConfigParser.RawConfigParser()
-		cls.config.read(config_path)
-		return cls(cls.config.getint(section, MAJOR), cls.config.getint(section, MINOR),
-		           cls.config.getint(section, BUGFIX), config_path, section )
 	def __init__(self, major, minor, bugfix):
 		self.major = major
 		self.minor = minor
@@ -64,8 +56,6 @@ class Version(object):
 	def add_new_version(self, bugfix):
 		self.config.add_section(get_software_version_string(self.major, self.minor, bugfix))
 
-	def is_downloaded(self):
-		return False
 	def get_cm_url(self):
 		return self.config[cm]['url']
 
@@ -82,4 +72,4 @@ class Version(object):
 		return self.config[cm]['VERSIONS'][self.current_version]['deployed']['tech/dev']
 
 	def get_cm_download_url(self, ):
-		print self.get_cm_url() + self.current_version;
+		print self.get_cm_url() + self.current_version
